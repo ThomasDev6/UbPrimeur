@@ -1,0 +1,65 @@
+Projet d'un primeur en ligne ( détaillant de fruits et légumes)
+3 types : calculables, attributs ou paramètres(valeurs fixes)
+
+
+Contexte et objectifs, définition des acteurs, préparer MCD
+
+Contexte :
+
+Pré page acceuil :
+- LOGO
+- Explication du principe
+- Proposition de connexion qui amène à l'autre page
+- sous lien : inscription qui propose le formulaire + case acceptez vous qu'on utilise votre mail pour nouveauté et accepter les conditions d'utilisation avec lien vers CU
+
+Si connexion, une vraie page d'acceuil avec un menu de navigation :
+
+Menu de nav :
+- Bouton acceuil sur le logo
+- A propos
+- Fruits
+- Légumes
+- Panier
+- Compte
+- ? barre de recherche de fruits ou légumes par nom
+
+Footer :
+- Accès à la page webmaster (plutôt caché)
+- Certifications
+- Réseaux sociaux : insta et twitter ( on créée un insta et un twitter uberPrimeur pour de faux )
+
+Corps de la page :
+- Info sur le fruitier légumier ( âge de l'entreprise, lieu)
+- Les nouveautés de saisons ( ce qui est nouveau dans cette saison )
+- Deux rubriques : Fruits , Légumes qui amène vers un page Fruits et une autre Légumes
+
+Page a propos :
+
+
+Page Légumes :
+- Grand intitulé "légumes" avec label ( découvrez nos légumes)
+- Classés par saison ( hiver, été , printemps, automne)
+- Chaque légume avec prix et bouton ajouter au panier + quantité + une page par légume <!> INDIQUER CONDITIONS  VENTE ( au kilo, à la barquette etc) <!> (descriptif prix quantité ajout panier photo)
+
+Page Fruits :
+- Pareil que page légumes
+
+Page panier : 
+- Affichage des quantités sélectionnées + somme prix affichée + bouton passer commande
+
+Page commande :
+- Choix de livraisons
+- adress
+- Prix
+- bouton valider qui amène sur page commande validée puis bouton vers accueil
+
+Page compte : 
+- Nom prénom
+- adresse mail (avec bouton modifier)
+- modifier mot de passe
+- Historique de commandes
+
+Page webmaster : 
+- voir envoie mail à tout ceux qui ont mit oui
+- Gérer les stocks 
+- Gérer les prix
