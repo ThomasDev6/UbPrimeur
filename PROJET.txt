@@ -17,6 +17,7 @@ Si connexion, une vraie page d'acceuil avec un menu de navigation :
 Menu de nav :
 - Bouton acceuil sur le logo
 - A propos
+- Nos paniers
 - Fruits
 - Légumes
 - Panier
@@ -30,16 +31,21 @@ Footer :
 
 Corps de la page :
 - Info sur le fruitier légumier ( âge de l'entreprise, lieu)
-- Les nouveautés de saisons ( ce qui est nouveau dans cette saison )
+- La recette de la semaine ( ce qui est nouveau dans cette saison )(supprimé l'ancienne dès qu'il y a une nouvelle)
 - Deux rubriques : Fruits , Légumes qui amène vers un page Fruits et une autre Légumes
 
 Page a propos :
+- CGV
+- Livraison explication
 
+Page nos paniers :
+- Explication du principe
+- Carré avec nbpersonnes, prix et un bouton valider
 
-Page Légumes :
+Page Légumes : générée avec un boucle sur la base de données
 - Grand intitulé "légumes" avec label ( découvrez nos légumes)
 - Classés par saison ( hiver, été , printemps, automne)
-- Chaque légume avec prix et bouton ajouter au panier + quantité + une page par légume <!> INDIQUER CONDITIONS  VENTE ( au kilo, à la barquette etc) <!> (descriptif prix quantité ajout panier photo)
+- Chaque légume avec prix et bouton ajouter au panier + quantité + une page par légume avec desc <!> INDIQUER CONDITIONS  VENTE ( au kilo, à la barquette etc) <!> (descriptif prix quantité ajout panier photo)
 
 Page Fruits :
 - Pareil que page légumes
@@ -55,6 +61,7 @@ Page commande :
 
 Page compte : 
 - Nom prénom
+- Si abonnement proposition de résiliation
 - adresse mail (avec bouton modifier)
 - modifier mot de passe
 - Historique de commandes
@@ -63,3 +70,8 @@ Page webmaster :
 - voir envoie mail à tout ceux qui ont mit oui
 - Gérer les stocks 
 - Gérer les prix
+- Ajouter / retirer produits
+- Ajouter des recettes de la semaine
+- Afficher les clients en livraison hebdo
+
+
