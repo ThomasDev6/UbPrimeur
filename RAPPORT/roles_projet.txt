@@ -1,0 +1,18 @@
+Val:
+- Pré page d'accueil
+- Menu nav
+- Footer
+
+Tomate:
+- Page d'accueil
+- Page à propos
+
+Lhukas:
+- Page compte
+- Page nos paniers
+
+Toutes les divs sur la page centrée avec margin-left : 10%       et TITLE DE CHAQUE PAGE UberPrimeur
+ 
+CSS : /!\ 1 CSS par page, QUE DES CLASSES OU DES ID /!\
+
+Les endroits ou il y aura du PHP doivent être correctement structurés pour acceuillir le php sans que ça se déforme (ultra important !)
