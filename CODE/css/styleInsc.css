@@ -2,11 +2,15 @@ html{
     background-image: url("../../PHOTOS/legumes2.jpg");
     color:white;
     text-align: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 body{
     width: 70%;
     margin-left: 15%;
-    font-size: 18px;
+   
     background-color: #005F40;
     border-radius: 10px;
     padding-bottom: 20px;
@@ -29,6 +33,7 @@ h2{
 }
 input{
     width:200px;
+    border-radius:5px;
 }
 .fin{
     display: inline-flex;
@@ -49,4 +54,11 @@ input{
 #btnInsc:hover{
     background-color: teal;
     color:white;
+}
+
+.pageCo{
+    text-decoration:none;
+    color: white;
+    font-style: italic;
+    font-size: 15px;
 }

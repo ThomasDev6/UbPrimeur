@@ -70,3 +70,6 @@ h2{
 #use{
     padding-top:10px;
 }
+input{
+    border-radius: 5px;
+}
