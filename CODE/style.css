@@ -7,6 +7,7 @@
     background-color: #005F40;
     width:100%;
     display: inline-flex;
+    margin-bottom:2%;
 }
 .logo{
     float:left;
@@ -34,4 +35,45 @@
 #iconMenu{
     margin-right: 10px;
     padding-top:10px;
+}
+
+body{
+	margin:0;
+}
+
+#ita{
+    font-style: italic;
+    margin-left: 10px;
+}
+#webmaster{
+    font-style: italic;
+    font-size:12px;
+    text-decoration: none;
+    color:rgb(189, 188, 188);
+}
+.reseaux{
+   
+    text-align: right;
+    padding-top:2%;
+    width:20%;
+    padding-right: 2%;
+}
+
+#dispoFoot{
+    display: inline-flex;
+    width:100%;
+}
+
+.footer{
+    color: white;
+    background-color: #005F40;
+    text-align: center;
+    margin-top:2%;
+    width:100%;
+}
+#certif{
+    margin-left:30%;
+    padding-top:2%;
+    width:80%;
+    display: inline-flex;
 }
