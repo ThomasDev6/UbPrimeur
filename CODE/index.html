@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="styleIndex.css" />
+	<link rel="stylesheet" href="css/styleIndex.css" />
 		
 		<title>UberPrimeur</title>
         
         <body>
+			<img src="../LOGOS/logo.PNG" witdh= 430 height=275 alt>
+			<p>🥕	Aidez votre agriculteur préféré, Mr Carcenac, en continuant d'acheter ses fruits et légumes frais ! 🥕</p>
+			<p>🍓 Pour cela rien de plus simple. Connectez-vous, et remplissez votre panier. 🍓</p>
+			<p>🚛	On se charge de la livraison 😉</p>
 
+			<form method="POST" action="connexion.php">
+				<h2>Se connecter</h2>
+			<div class="connexion">
+				
+				
+				<div>
+					<label id="use" for="username">Adresse email</label>
+					<input type="text" id="username" name="username">
+				</div>
+				<div>
+					<label id="mdp" for="pass">Mot de passe </label>
+					<input type="password" id="pass" name="password" minlength="8" required>
+
+
+					<input id="btnCo" type="submit" value="Connexion">
+				</div>
+				<a class="pageInsc" href="inscription.html">Vous n'avez pas de compte ? <u>Inscrivez-vous </u></a>
+				
+			</div>
+			</form>
         </body>
 </html>

@@ -1,0 +1,72 @@
+html{
+    background-image: url("../../PHOTOS/legumes.jpg");
+    color:white;
+    text-align: center;
+}
+body{
+    width: 70%;
+    margin-left: 15%;
+    font-size: 18px;
+    background-color: #005F40;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+.connexion{
+    width:40%;
+    margin-left:30%;
+    border : solid rgb(5, 141, 16) 2px;
+    border-radius: 10px;
+    text-align: center;
+}
+.connexion > div{
+    text-align: center;
+    margin-left:25%;
+    width:50%;
+}
+#username,#pass{
+    margin-bottom: 2%;
+    width:170px;
+    height:18px;
+}
+#pass{
+    margin-bottom: 10px;
+}
+#mdp,#use{
+    font-size: 16px;
+}
+#mdp{
+    margin-right:2.3%;
+}
+#btnCo{
+    font-size: 14px;
+    margin-top:2%;
+    margin-bottom: 22.41px; 
+    color:black;
+    border-radius: 10px;
+    padding:5px;
+}
+#btnCo:hover{
+    background-color:teal;
+    color:white;
+}
+label {
+    display: block;
+    font: .9rem 'Fira Sans', sans-serif;
+}
+
+input[type='submit'],
+label {
+    margin-top: 5px;
+}
+.pageInsc{
+    text-decoration:none;
+    color: white;
+    font-style: italic;
+    font-size: 15px;
+}
+h2{
+    margin:0;
+}
+#use{
+    padding-top:10px;
+}
