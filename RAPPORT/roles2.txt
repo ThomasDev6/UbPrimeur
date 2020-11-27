@@ -1,0 +1,12 @@
+Partie php      /!\ HEBDO EST UN VARCHAR = "PETIT", "MOYEN" OU "GRAND" /!\
+
+VAL :
+Connexion et inscription
+
+TOTO :
+Recette de la page d'accueil
+
+LULU :
+Affichage dans la page compte : Nom et prénom
+Modif email et mdp 
+Dans paniers hebdo, faire page abonnement pour panier hebdo ( paiement hebdomadaire )
