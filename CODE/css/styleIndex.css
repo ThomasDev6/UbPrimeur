@@ -2,6 +2,10 @@ html{
     background-image: url("../../PHOTOS/legumes.jpg");
     color:white;
     text-align: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
 }
 body{
     width: 70%;

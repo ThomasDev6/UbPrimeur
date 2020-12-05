@@ -8,9 +8,7 @@
     
     // Récupération du mdp hashé avec le grain de sel
     $salt = "*$=²ù€;.?,È{qü=BuÐ8ƒµ´à¤";
-    $mdp = md5($_POST["password"].$salt);
-
-    
+    $mdp = md5($_POST["password"].$salt); 
 
 
     $getId = "SELECT idMail FROM mail WHERE mail ='$mail'";
