@@ -6,10 +6,10 @@
 		<title>UberPrimeur</title>
         <div class="header">
 				<div class="logo">
-					<a href="accueil.html"><img id="logoNav" src="../LOGOS/logo5.PNG" width=400 height=62 alt></a>
+					<a href="accueil.php"><img id="logoNav" src="../LOGOS/logo5.PNG" width=400 height=62 alt></a>
 				</div>
 				<div class="menuNav">
-					<a href="apropos.html" class="rubrique"><img id="iconMenu" src="../PHOTOS/apropos.png" height=18 width=18 alt>À propos</a>
+					<a href="a_propos.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/apropos.png" height=18 width=18 alt>À propos</a>
 					<a href="nospaniers.php"class="rubrique"><img id="iconMenu" src="../PHOTOS/nospaniers.png" height=18 width=18 alt>Nos paniers</a>
 					<a href="fruits.php"class="rubrique"><img id="iconMenu" src="../PHOTOS/fruit.jpg" height=18 width=18 alt>Fruits</a>
 					<a href="legumes.php"class="rubrique"><img id="iconMenu" src="../PHOTOS/legume.png" height=18 width=18 alt>Légumes</a>
@@ -72,7 +72,7 @@
 
 
                 <div class="form">
-                    <h2>Retrait d'une marchandise </h2>
+                    <h2>Suppression d'une marchandise </h2>
                     <form method="post" action="retrait.php">
 
                         <p> Type de marchandise</p>

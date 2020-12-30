@@ -1,0 +1,181 @@
+        /*Barre Nav*/
+.header{
+    background-color: #005F40;
+    width:100%;
+    display: inline-flex;
+    margin-bottom:2%;
+}
+.logo{
+    float:left;
+    width:20%;
+    padding-top: 1%;
+}
+.rubrique{
+    text-decoration:none;
+    padding-left:2%;
+    padding-right:2%;
+    color:white;
+}
+.rubrique:hover{
+    font-weight: bold;
+}
+.menuNav{
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    padding-left: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size:20px;
+}
+#iconMenu{
+    margin-right: 10px;
+    padding-top:10px;
+}
+        /*Corps de la page*/
+body{
+    margin:0;
+}
+#logo_accueil{
+    width: 80%;
+    margin-left: 10%;
+}
+#logo_accueil > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#ptt_primeur{
+    width:80%;
+    margin-left:10%;
+    text-align: center;
+    font-size: 20px;
+} /* Cadre recette*/
+#recette{
+    width:80%;
+    margin-left:10%;
+    padding-bottom: 20px;
+    background-color:#005F40;
+    display: inline-block;
+    border-radius: 15px;
+}
+#recette > h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;}
+#recette > h3{
+    color: white;
+    text-align: center;
+}
+#ing{
+    width: 21%;
+    float: left;
+    color: white;    
+    border-top: 2px dotted white;
+}
+#ing > h3 {
+    text-align: center;
+}
+#prep > h3{
+    text-align: center;
+    color: white;
+}
+#prep{
+    width: 52%;
+    float: left;
+    border-left: 2px dotted white;
+    border-top: 2px dotted white;
+    
+    color: white;
+}
+#img_rct{
+    width: 23%;
+    float: left;
+    margin-left: 2%;
+}
+#image_rct{
+    max-width: 100%;
+    max-height: 100%;
+}
+    /* Cadre de choix de page (légume ou fruit)*/
+#choix_page{
+    width:80%;
+    margin-left:10%;
+    margin-top: 80px;
+    display: inline-block;
+}
+#p_legume{
+    width: 40%;
+    margin-left: 5%;
+    float: left;
+}
+.img_choix{
+    width: 100% ;
+    height: 304px;
+}
+.desc_choix_p{
+    background-color: black; 
+    width: 99,5%;
+    border: 3px solid black;
+    height: 50px;    
+}
+
+.desc_choix_p > a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.desc_choix_p :hover{
+    background-color: white;
+    color: black;
+}
+#p_fruit{
+    width: 40%;
+    margin-left: 10%;
+    margin-right: 5%;
+    float: left;
+}
+        /*Footer*/
+
+#ita{
+    font-style: italic;
+    margin-left: 10px;
+}
+#webmaster{
+    font-style: italic;
+    font-size:12px;
+    text-decoration: none;
+    color:rgb(189, 188, 188);
+}
+.reseaux{
+   
+    text-align: right;
+    padding-top:2%;
+    width:20%;
+    padding-right: 2%;
+}
+
+#dispoFoot{
+    display: inline-flex;
+    width:100%;
+}
+
+.footer{
+    color: white;
+    background-color: #005F40;
+    text-align: center;
+    margin-top:2%;
+    width:100%;
+}
+#certif{
+    margin-left:30%;
+    padding-top:2%;
+    width:80%;
+    display: inline-flex;
+}

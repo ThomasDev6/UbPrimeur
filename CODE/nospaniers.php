@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/webmaster.css" />
+	<link rel="stylesheet" href="css/stylenosPanier.css" />
 		
 		<title>UberPrimeur</title>
-        <div class="header">
+
+		
+		<!--Début du body-->
+		<body>
+			<div class="header">
 				<div class="logo">
 					<a href="accueil.php"><img id="logoNav" src="../LOGOS/logo5.PNG" width=400 height=62 alt></a>
 				</div>
@@ -17,29 +21,63 @@
 					<a href="compte.php"class="rubrique"><img id="iconMenu" src="../PHOTOS/compte.jpg" height=18 width=18 alt>Compte</a>
 				</div>
 			</div>
-		
-		<!--Début du body-->
-        <body style="text-align:center">
-        
-        	<form method="POST" action="coWeb.php">
-                <h2>Accès webmaster</h2>
-                <p>Entrez le mot de passe webmaster </p>
+			
+			<div class="encadre">
+				<p class="gTitre TA"> Panier Hebdomadaire</p> 
+				<p class="TA txt">Nous vous proposons des paniers au gré des saisons qui vous seront livrés le samedi chaque semaine. </p>
+				<p class="TA">La composition du panier est secrète ! vous la découvrirez le jour de la livraison, UberPrimeur vous garantie une satisfaction totale. </p>
+				<p class="separationCom"></p>
+				
+<form method="post" action="paiment.php">
+				<div class="photoPanier">
+				
 
-				<div>
-					<label id="mdp" for="pass">Mot de passe </label>
-					<input type="password" id="pass" name="password" required>
 
 
-					<input id="btnCo" type="submit" value="Connexion">
+				<img src="../PHOTOS/petitpanier.jpeg" alt="" />
+					<p>Ce panier convient à 2-3 personnes</p>
+					<input type="radio" id="" name="Choix" value="petit" >
 				</div>
-			</form>
+				<div class="photoPanier">
+
+					<img src="../PHOTOS/moyenpanier.jfif" alt="" />
+					<p>Ce panier convient à 4-5 personnes</p>
+					<input type="radio" id="" name="Choix" value="moyen" >
+				</div>
+				<div class="photoPanier">
+
+					<img src="../PHOTOS/photoPanier.jpg" alt="" />
+					<p>Ce panier convient à plus de 6 personnes</p>
+					<input type="radio" id="" name="Choix" value="grand" >
+				</div>
+
+			<input class="btnPanier" type="submit" value="Souscrire à l'abonnement">
 
 
-			<p>La page à laquelle vous tenter d'accéder est privée.</p>
-			<p>Toute tentative non-fructueuse vous ramènera à la page d'accueil.</p>
-			<img src="../PHOTOS/cad.png" alt>
-		</body>
-        <div class="footer">
+
+
+				</form>
+
+
+
+				
+
+
+
+				
+
+</div>
+
+
+					
+				
+
+
+
+				
+			
+			
+			<div class="footer">
 				<div id="dispoFoot">
 					<div id="certif">
 						<p>Site réalisé par Valentin Melusson, Lhukas Nelhomme et Thomas Jallu  ©</p><p id="ita">Tous droits réservés</p>
@@ -53,4 +91,5 @@
 				</br>
 				<a href="webmaster.php" id="webmaster">accès webmaster</a>
 			</div>
+        </body>
 </html>
