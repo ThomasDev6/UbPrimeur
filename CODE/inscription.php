@@ -66,15 +66,8 @@
     // Création du client
     $insert = "INSERT INTO client VALUES (null,'$nom','$prenom','$mdp','$choix','$hebdo','$tel','$idAddr','$idmail')";
     $inscli = $co->query($insert);
-    
 
-    /*
-    session_start();
-    $_SESSION["acces"]=true;
-    */
-
-
-    header("Location: accueil.php");
+    header("Location: index.html");
     exit;
     
 ?>

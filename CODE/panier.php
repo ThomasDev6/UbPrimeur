@@ -24,25 +24,76 @@
 
 
             <div class="encadre">
-                <p class="GT">résumé du panier<p>
-			<table >
-            <tr>
-				  <th>Désignation</th>
-                  <th>Prix</th>
-                  <th>Poids</th>
-                  <th>Quantité</th>
-                  <th>Total</th>
-				</tr>
+                <p class="GT">Résumé du panier<p>
+		
 <?php 
 	require_once('connect.php');
+
+	session_start();
+
+	if($_SESSION['idCli'] != 0){
+		
+		$idclient = $_SESSION['idCli'];
+	}else{
+		header("Location: index.html");
+		exit;
+	}
+
+
 	$totalPrixLeg=0;
 	$totalPrixFruit=0;
-	$idclient=1;
-	$sql="SELECT clientPanier FROM panierclient WHERE idPanierClient='$idclient'";
+	
+	$sql01="SELECT * FROM client WHERE idClient='$idclient'";
+	$p01 = $co->query($sql01);
+	
+	while ($row = $p01->fetch_assoc() )  
+	{
+		$numAdresse=$row['adresseCli'];
+	}
+	$sql03="select * from adresse where idAdresse=$numAdresse";
+	$p03 = $co->query($sql03);
+
+
+	while ($row3 = $p03->fetch_assoc() )  
+	{
+	$CP=$row3['codePostal'];
+	$ville=$row3['ville'];
+	$adresse=$row3['adresse'];
+	}
+
+
+	$sql="SELECT idPanierClient FROM panierclient WHERE clientPanier='$idclient'";
 	$p1 = $co->query($sql);
+
+	$req="SELECT * FROM lignepanierleg WHERE clientLigneLegP = '$idclient'";
+	$rep= $co->query($req);
+	$value = $rep->num_rows;
+
+	$sql00="SELECT * FROM lignepanierfruit WHERE clientLigneP ='$idclient'";
+	$p00 = $co->query($sql00);
+	$value2= $p00->num_rows;
+
+	$test = $value + $value2;
+
+	if ($test ==0)
+	{
+		
+		echo "<img  src='../PHOTOS/panierCoeur.jpg' height=200 width=200 alt>";
+		echo "<p>Votre panier est vide </p>";
+	}
+	else 
+	{
+		echo "<table >
+		<tr>
+			  <th>Désignation</th>
+			  <th>Prix</th>
+			  <th>Détail de vente</th>
+			  <th>Quantité</th>
+			  <th>Total</th>
+			</tr>";
 	while ($row = $p1->fetch_assoc() )  
 	{
-		$idpanier = $row['clientPanier'];
+		$idpanier = $row['idPanierClient'];
 	}
 	$sql2="SELECT * FROM lignepanierfruit WHERE panierLigneP='$idpanier'";
 	$p2 = $co->query($sql2);
@@ -57,12 +108,12 @@
 		echo "<tr>";
 		echo "<td>".$row3['nomFruit']."</td>";
 		echo "<td>".$row3['prixFruit']." €</td>";
-		echo "<td>".$row3['quantiteFruit']." ".$row3['detailVenteFruit']."</td>";
+		echo "<td>".$row3['detailVenteFruit']."</td>";
 		echo "<td>".$row2['quantiteFruitP']."</td>";
 		$total=$row3['prixFruit']*$row2['quantiteFruitP'];
 		$totalPrixFruit+=$total;
-		echo "<td>".$total." €</td>"; 
-		echo"<td><a href = 'supprimerFruit.php?id=".$idfruit."'>supprimer</a></td>";
+		echo "<td id=\"avantsupp\">".$total." €</td>"; 
+		echo"<td id=\"supp\"><a id=\"btnSupp\" href = 'supprimerFruit.php?id=".$idfruit."'>Supprimer</a></td>";
 		echo "</tr>";
 	}
 	}
@@ -79,12 +130,12 @@
 				echo "<tr>";
 				echo "<td>".$row5['nomLeg']."</td>";
 				echo "<td>".$row5['prixLeg']." €</td>";
-				echo "<td>".$row5['quantiteLeg']." ".$row5['detailVenteLeg']."</td>";
+				echo "<td>".$row5['detailVenteLeg']."</td>";
 				echo "<td>".$row4['quantiteLegP']."</td>";
 				$total=$row5['prixLeg']*$row4['quantiteLegP'];
 				$totalPrixLeg+=$total;
-				echo "<td>".$total." €</td>"; 
-				echo"<td><a href = 'supprimerLeg.php?id=".$idleg."'>supprimer</a></td>";
+				echo "<td id=\"avantsupp\" >".$total." €</td>"; 
+				echo"<td id=\"supp\" ><a id=\"btnSupp\" href = 'supprimerLeg.php?id=".$idleg."'>Supprimer</a></td>";
 				echo "</tr>";
 			}
 
@@ -93,29 +144,36 @@
 		}
 		$sousTotal=$totalPrixLeg+$totalPrixFruit;
 	echo "<p class='recap'>Sous total du panier : ".$sousTotal." € </p>";
-?>
-</table>
-<p class="separationCom"></p>
-<p class='recap'>Adresse de livraison </p>
-<?php 
+	echo "</table>";
+	echo "<p class='separationCom'></p>";
+	echo "<p class='recap'>Adresse de livraison </p>";
 
-echo "<form method='post' action='paimentPanier.php?id=$idclient'>";
+echo "<form method='post' action='paimentPanier.php'>";
 
-?>
 
-					<div class="form">
+echo "<div class='form'>";
 						
-						<p class="name">Code postal : </p>
-						<input class="inpt" type = "" id="" name="" value="" > 
+echo "<p class='name'>Code postal : </p>  <input class='inpt'  value='$CP' >" ;
 						
-						<p class="name">Ville :</p>
-						<input class="inpt" type ="" id="pass" name=""> 
-						<p class="name">Adresse :</p>
-						<input class="inpt" type ="" id="pass" name=""> 
+echo "<p class='name'>Ville :</p> <input class='inpt' id='pass' value='$ville'> ";
+	echo "<p class='name'>Adresse :</p> <input class='inpt'  id='pass' value='$adresse'> ";					
+						
 					
-					</div>
-					<input class="btn" type="submit" value="Comfirmez panier et passez au paiement" >
-					</form>
+					
+					echo "</div>";
+					echo "<input class='btn' type='submit' value='Comfirmez panier et passez au paiement' >";
+					echo "</form>";
+
+
+	}
+	
+
+
+
+
+?>
+
+				
             </div>
 <div class="footer">
 				<div id="dispoFoot">

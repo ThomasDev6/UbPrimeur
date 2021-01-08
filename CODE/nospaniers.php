@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-	<meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/stylenosPanier.css" />
 		
 		<title>UberPrimeur</title>
@@ -24,8 +25,8 @@
 			
 			<div class="encadre">
 				<p class="gTitre TA"> Panier Hebdomadaire</p> 
-				<p class="TA txt">Nous vous proposons des paniers au gré des saisons qui vous seront livrés le samedi chaque semaine. </p>
-				<p class="TA">La composition du panier est secrète ! vous la découvrirez le jour de la livraison, UberPrimeur vous garantie une satisfaction totale. </p>
+				<p class="TA txt" style="font-size:18px;">Nous vous proposons des paniers au gré des saisons qui vous seront livrés le samedi chaque semaine. </p>
+				<p class="TA" style="font-size:18px;">La composition du panier est secrète ! Vous la découvrirez le jour de la livraison, UberPrimeur vous garantie une satisfaction totale. </p>
 				<p class="separationCom"></p>
 				
 <form method="post" action="paiment.php">
@@ -35,23 +36,25 @@
 
 
 				<img src="../PHOTOS/petitpanier.jpeg" alt="" />
-					<p>Ce panier convient à 2-3 personnes</p>
+					<p  style="font-size:17px;">Ce panier convient à 2/3 personnes</p>
 					<input type="radio" id="" name="Choix" value="petit" >
 				</div>
 				<div class="photoPanier">
 
 					<img src="../PHOTOS/moyenpanier.jfif" alt="" />
-					<p>Ce panier convient à 4-5 personnes</p>
+					<p  style="font-size:17px;">Ce panier convient à 4/5 personnes</p>
 					<input type="radio" id="" name="Choix" value="moyen" >
 				</div>
 				<div class="photoPanier">
 
 					<img src="../PHOTOS/photoPanier.jpg" alt="" />
-					<p>Ce panier convient à plus de 6 personnes</p>
+					<p style="font-size:17px;">Ce panier convient à 6/7 personnes</p>
 					<input type="radio" id="" name="Choix" value="grand" >
 				</div>
-
-			<input class="btnPanier" type="submit" value="Souscrire à l'abonnement">
+<div class="entoure">
+	<input class="btnPanier" type="submit" value="Souscrire à l'abonnement" style="font-size:17px;">
+</div>
+			
 
 
 

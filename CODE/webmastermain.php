@@ -30,17 +30,17 @@
                     <form method="post" action="stock.php">
 
                         <p> Type de marchandise</p>
-                        <select name="type" >
+                        <select name="type" required >
                             <option value="">--Choisissez un type--</option>
                             <option value="fru">Fruit</option>
                             <option value="leg">Légume</option>
                         </select></br>
 
                         <p>Nom de la marchandise</p>
-                        <input type="texte" name="nomMarch"></br>
+                        <input type="texte" name="nomMarch" required></br>
 
                         <p>Ajout de stock</p>
-                        <input type="number" name="stock" value="0"></br>
+                        <input type="number" name="stock" value="0" required></br>
 
                         <input id="btnVal" type="submit" value="Valider">
 
@@ -53,17 +53,17 @@
                     <form method="post" action="prix.php">
 
                         <p> Type de marchandise</p>
-                        <select name="type" >
+                        <select name="type" required>
                             <option value="">--Choisissez un type--</option>
                             <option value="fru">Fruit</option>
                             <option value="leg">Légume</option>
                         </select></br>
 
                         <p>Nom de la marchandise</p>
-                        <input type="texte" name="nomMarch"></br>
+                        <input type="texte" name="nomMarch" required></br>
 
                         <p>Nouveau prix</p>
-                        <input type="number" name="prix" value="0"></br>
+                        <input type="number" name="prix" value="0" required></br>
 
                         <input id="btnVal" type="submit" value="Valider">
 
@@ -76,14 +76,14 @@
                     <form method="post" action="retrait.php">
 
                         <p> Type de marchandise</p>
-                        <select name="type" >
+                        <select name="type" required>
                             <option value="">--Choisissez un type--</option>
                             <option value="fru">Fruit</option>
                             <option value="leg">Légume</option>
                         </select></br>
 
                         <p>Nom de la marchandise</p>
-                        <input type="texte" name="nomMarch"></br>
+                        <input type="texte" name="nomMarch" required></br>
 
 
                         <input id="btnVal" type="submit" value="Valider">
@@ -98,32 +98,32 @@
                     <form method="post" action="ajoutMarch.php">
 
                         <p> Type de marchandise</p>
-                        <select name="type" >
+                        <select name="type" required>
                             <option value="">--Choisissez un type--</option>
                             <option value="fru">Fruit</option>
                             <option value="leg">Légume</option>
                         </select></br>
 
                         <p>Nom de la marchandise</p>
-                        <input type="texte" name="nomMarch"></br>
+                        <input type="texte" name="nomMarch" required></br>
 
                         <p>Nom de la photo</p>
-                        <input type="texte" name="nomPh"></br>
+                        <input type="texte" name="nomPh" required></br>
 
                         <p>Prix à l'unité</p>
-                        <input type="number" name="prix" value="0"></br>
+                        <input type="number" name="prix" value="0" required></br>
 
                         <p>Détail de vente</p>
-                        <input type="texte" name="detail"></br>
+                        <input type="texte" name="detail" required></br>
 
                         <p>Stock initial</p>
-                        <input type="number" name="stockI" value="0"></br>
+                        <input type="number" name="stockI" value="0" required></br>
 
                         <p>Famille</p>
-                        <input type="texte" name="famille"></br>
+                        <input type="texte" name="famille" required></br>
 
                         <p>Saison</p>
-                        <input type="texte" name="saison"></br>
+                        <input type="texte" name="saison" required></br>
 
                         <input id="btnVal" type="submit" value="Valider">
 

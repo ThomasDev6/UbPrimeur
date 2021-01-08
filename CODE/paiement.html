@@ -2,50 +2,56 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-<link rel="stylesheet" href="css/stylePaiment"/>
+<link rel="stylesheet" href="css/stylePaiment.css"/>
  
 <body>
-<div class="header">
-				<div class="logo">
-					<a href="accueil.php"><img id="logoNav" src="../LOGOS/logo5.PNG" width=400 height=62 alt></a>
-				</div>
-				<div class="menuNav">
-					<a href="a_propos.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/apropos.png" height=18 width=18 alt>À propos</a>
-					<a href="nospaniers.php"class="rubrique"><img id="iconMenu" src="../PHOTOS/nospaniers.png" height=18 width=18 alt>Nos paniers</a>
-					<a href="fruits.php"class="rubrique"><img id="iconMenu" src="../PHOTOS/fruit.jpg" height=18 width=18 alt>Fruits</a>
-					<a href="legumes.php"class="rubrique"><img id="iconMenu" src="../PHOTOS/legume.png" height=18 width=18 alt>Légumes</a>
-					<a href="panier.php"class="rubrique"><img id="iconMenu" src="../PHOTOS/panier.png" height=18 width=18 alt>Panier</a>
-					<a href="compte.php"class="rubrique"><img id="iconMenu" src="../PHOTOS/compte.jpg" height=18 width=18 alt>Compte</a>
-				</div>
-			</div>
+  <div class="header">
+		<div class="logo">
+			<a href="accueil.php"><img id="logoNav" src="../LOGOS/logo5.PNG" width=400 height=62 alt></a>
+		</div>
+		<div class="menuNav">
+			<a href="a_propos.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/apropos.png" height=18 width=18
+					alt>À propos</a>
+			<a href="nospaniers.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/nospaniers.png" height=18
+					width=18 alt>Nos paniers</a>
+			<a href="fruits.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/fruit.jpg" height=18 width=18
+					alt>Fruits</a>
+			<a href="legumes.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/legume.png" height=18 width=18
+					alt>Légumes</a>
+			<a href="panier.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/panier.png" height=18 width=18
+					alt>Panier</a>
+			<a href="compte.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/compte.jpg" height=18 width=18
+					alt>Compte</a>
+		</div>
+	</div>
 
     <div class="contenue">
-      <form action="compte.php">
+      <form action="paiement.php">
       
         <div class="row">
 
           <div class="col-50">
             <h3>Paiement</h3>
-            <label for="fname">Carte acceptée</label>
+            <label for="fname">Cartes acceptées</label>
             <div class="icon-container">
               <i class="fa fa-cc-visa" style="color:navy;"></i>
               <i class="fa fa-cc-amex" style="color:blue;"></i>
               <i class="fa fa-cc-mastercard" style="color:red;"></i>
               <i class="fa fa-cc-discover" style="color:orange;"></i>
             </div>
-            <label >Titulaire de la carte</label>
+            <label >Nom sur la carte</label>
             <input type="text" id="" name="" placeholder="" required>
-            <label for="">Numéro sur la carte</label>
+            <label for="">Numéro de carte</label>
             <input type="text" id="" name="" placeholder="1111-2222-3333-4444">
-            <label for="">Mois d'expiration de la carte </label>
-            <input type="text" id="" name="" placeholder="Septembe" required>
+            <label for="">Mois d'expiration </label>
+            <input type="text" id="" name="" placeholder="Septembre" required>
             <div class="row">
               <div class="col-50">
                 <label for="">Année d'expiration</label>
                 <input type="text" id="" name="" placeholder="2022" required>
               </div>
               <div class="col-50">
-                <label for="">CVV</label>
+                <label for="">Cryptogramme (CVV)</label>
                 <input type="text" id="" name="" placeholder="352" required>
               </div>
             </div>
@@ -53,7 +59,7 @@
           
         </div>
         
-        <button  class="btn" href="compte.php?paye=1">Payer</button>
+        <button  class="btn" href="paiement.php">Payer</button>
       </form>
      
       

@@ -17,18 +17,12 @@ require_once('connect.php');
 			<a href="accueil.php"><img id="logoNav" src="../LOGOS/logo5.PNG" width=400 height=62 alt></a>
 		</div>
 		<div class="menuNav">
-			<a href="a_propos.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/apropos.png" height=18 width=18
-					alt>À propos</a>
-			<a href="nospaniers.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/nospaniers.png" height=18
-					width=18 alt>Nos paniers</a>
-			<a href="fruits.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/fruit.jpg" height=18 width=18
-					alt>Fruits</a>
-			<a href="legumes.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/legume.png" height=18 width=18
-					alt>Légumes</a>
-			<a href="panier.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/panier.png" height=18 width=18
-					alt>Panier</a>
-			<a href="compte.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/compte.jpg" height=18 width=18
-					alt>Compte</a>
+			<a href="a_propos.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/apropos.png" height=18 width=18 alt>À propos</a>
+			<a href="nospaniers.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/nospaniers.png" height=18 width=18 alt>Nos paniers</a>
+			<a href="fruits.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/fruit.jpg" height=18 width=18 alt>Fruits</a>
+			<a href="legumes.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/legume.png" height=18 width=18 alt>Légumes</a>
+			<a href="panier.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/panier.png" height=18 width=18 	alt>Panier</a>
+			<a href="compte.php" class="rubrique"><img id="iconMenu" src="../PHOTOS/compte.jpg" height=18 width=18 	alt>Compte</a>
 		</div>
 	</div>
 

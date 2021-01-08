@@ -18,7 +18,7 @@
     }
     
     //Préparation de la vérif mot de passe
-    $connexion = "SELECT mdpClient FROM client WHERE mailCli = '$idmail'";
+    $connexion = "SELECT mdpClient, idClient FROM client WHERE mailCli = '$idmail'";
     $testco = $co->query($connexion);
     $numrows = $co->num_rows;
     
@@ -32,16 +32,19 @@
     // Récupération du mdp
     while($row = $testco->fetch_assoc()){
         $compMdp = $row["mdpClient"];
+        $idcli = $row["idClient"];
     }
     
 
     
     // Si les mdp correspondent
     if($compMdp == $mdp){
+
+        session_start();
+        $_SESSION['idCli'] = $idcli;
         header("Location: accueil.php");
         exit;
     }
-
 
     header("Location: index.html");
     exit;

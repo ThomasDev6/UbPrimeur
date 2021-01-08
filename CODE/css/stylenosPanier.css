@@ -106,6 +106,7 @@ margin : 0px;
 {
     display: inline-block;
     text-align: center;
+    margin-top: 15px;
     margin-left: 1%;
     margin-right:1%;
 }
@@ -139,12 +140,17 @@ width: 20px;
      padding-top: 10px;
      padding-bottom: 10px;
      margin-bottom: 15px;
-     margin-top: 15px;
+     margin-top: 30px;
      background-color: #005f3fbd;
      color:white;
      border-radius: 5px;
+      
+ }
+ .entoure
+ {
+     
  }
  .txt
  {
-     font-size: 10px;
+     font-size: 18px;
  }

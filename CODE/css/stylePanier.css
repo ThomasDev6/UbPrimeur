@@ -8,6 +8,19 @@
     margin : 0px;
     
     } 
+    .reseaux{
+       
+      text-align: right;
+      padding-top:2%;
+      width:20%;
+      padding-right: 2%;
+    }
+    #webmaster{
+      font-style: italic;
+      font-size:12px;
+      text-decoration: none;
+      color:rgb(189, 188, 188);
+    }
   .logo{
     float:left;
     width:20%;
@@ -46,6 +59,7 @@
     text-align: center;
     margin-top:2%;
     width:100%;
+
   }
   #certif{
     margin-left:30%;
@@ -58,9 +72,12 @@
   
     
 }
+
+
 .encadre
 {
-    margin-top:10px;
+    margin-top:100px;
+    margin-bottom:85px;
     background-color: #F7F6F6;
     margin-left: 10%;
     margin-right: 10%;
@@ -79,10 +96,33 @@ table {
     margin-left: 5%;
     width: 90%;
   }
+
+  #btnSupp{
+    text-decoration: none;
+    color:black;
+  }
+  #avantsupp{
+    border-right:solid black 1px;
+  }
+  #supp{
+    border:solid black 1px;
+    border-left:solid black 1px;
+  }
   
+  #supp:hover{
+    background-color:rgb(243, 83, 83);
+    color:white;
+  }
+
+  #supp:hover > a{
+    background-color:rgb(243, 83, 83);
+    color:white;
+  }
+  
+
+
   td, th {
     border: 1px solid #dddddd;
-    text-align: left;
     padding: 8px;
   }
   

@@ -48,7 +48,7 @@
                 <p class=\"nomfruit\">".$row["prixLeg"]." €  </p>
 
 
-                <form method=\"post\" action=\"ajoutPanier.php\">
+                <form method=\"post\" action=\"ajoutPanierL.php?idL=".$row["idLegume"]."\">
 
                 <input name=\"quantite\" type=\"number\" value=\"0\" max=\"100\">
                 <input name =\"ajout\" id=\"btnAjout\" type=\"submit\" value=\"Ajouter au panier\">
