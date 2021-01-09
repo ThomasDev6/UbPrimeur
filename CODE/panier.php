@@ -43,22 +43,24 @@
 	$totalPrixLeg=0;
 	$totalPrixFruit=0;
 	
-	$sql01="SELECT * FROM client WHERE idClient='$idclient'";
+	$sql01="SELECT adresseCli FROM client WHERE idClient='$idclient'";
 	$p01 = $co->query($sql01);
 	
 	while ($row = $p01->fetch_assoc() )  
 	{
 		$numAdresse=$row['adresseCli'];
 	}
-	$sql03="select * from adresse where idAdresse=$numAdresse";
+
+
+	$sql03="SELECT * FROM adresse WHERE idAdresse = '$numAdresse '";
 	$p03 = $co->query($sql03);
 
 
 	while ($row3 = $p03->fetch_assoc() )  
 	{
-	$CP=$row3['codePostal'];
-	$ville=$row3['ville'];
-	$adresse=$row3['adresse'];
+		$CP=$row3['codePostal'];
+		$ville=$row3['ville'];
+		$adresse = $row3['adresse'];	
 	}
 
 
@@ -153,10 +155,11 @@ echo "<form method='post' action='paimentPanier.php'>";
 
 echo "<div class='form'>";
 						
-echo "<p class='name'>Code postal : </p>  <input class='inpt'  value='$CP' >" ;
+echo "<p class='name'>Code postal : </p>  <input name =\"cp\" class='inpt'  value='$CP' >" ;
 						
-echo "<p class='name'>Ville :</p> <input class='inpt' id='pass' value='$ville'> ";
-	echo "<p class='name'>Adresse :</p> <input class='inpt'  id='pass' value='$adresse'> ";					
+echo "<p class='name'>Ville :</p> <input name =\"ville\" class='inpt' id='pass' value='$ville'> ";
+
+	echo "<p class='name'>Adresse :</p> <input name = \"addr\" class='inpt' value=\"".$adresse."\" id='pass' > ";					
 						
 					
 					

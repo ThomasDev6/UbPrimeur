@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+    if($_SESSION['idCli'] != 0){
+		
+		$idclient = $_SESSION['idCli'];
+	}else{
+		header("Location: index.html");
+		exit;
+	}
+	
+	?>
+	
 <!DOCTYPE html>
 <html lang="fr">
 	<meta charset="UTF-8">
@@ -46,11 +59,11 @@
 
                 <p class=\"nomfruit\">".$row["nomLeg"]." (".$row["detailVenteLeg"].") "."</p>
                 <p class=\"nomfruit\">".$row["prixLeg"]." €  </p>
-
+				<p class=\"nomfruit\"> Stock disponible : ".$row["quantiteLeg"]."</p>	
 
                 <form method=\"post\" action=\"ajoutPanierL.php?idL=".$row["idLegume"]."\">
 
-                <input name=\"quantite\" type=\"number\" value=\"0\" max=\"100\">
+                <input name=\"quantite\" type=\"number\" value=\"0\" max=\"". $row["quantiteLeg"]."\">
                 <input name =\"ajout\" id=\"btnAjout\" type=\"submit\" value=\"Ajouter au panier\">
                 </form>
                 </div>";

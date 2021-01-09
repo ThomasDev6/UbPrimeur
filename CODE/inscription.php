@@ -57,6 +57,7 @@
     $idmail = $co->insert_id;
     
     // Création de l'adresse
+    $addr = str_replace("'"," ",$addr);
     $insertAddr = "INSERT INTO adresse VALUES(null,'$cp','$ville','$addr')";
     $insAd = $co->query($insertAddr);
     $idAddr = $co->insert_id;

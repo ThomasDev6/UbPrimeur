@@ -1,5 +1,13 @@
 <?php
 require_once('connect.php');
+session_start();
+    if($_SESSION['idCli'] != 0){
+		
+		$idclient = $_SESSION['idCli'];
+	}else{
+		header("Location: index.html");
+		exit;
+    }
 ?>
 <!DOCTYPE html>
 <html lang="fr">

@@ -140,7 +140,8 @@
 			<?php
 			if (!empty($abo))
 			{
-				echo "<p class='abonnement' >Vous avez souscrit a un abonnement pour un panier hebdomadaire $abo</p>";
+				echo "<p class='abonnement' >Vous avez souscrit a un abonnement pour un panier hebdomadaire $abo</p>
+				<a class='btn_abo' type='button' href='desabonnement.php'>Se désabonner</a>";
 			}
 			else 
 			echo "<p class='TA text_abo'> Vous n'avez souscrit à aucun abonnement actuellement</p>
@@ -286,6 +287,7 @@ echo "<p class='separationCom'></p>";
    
 	
 ?>
+			<a class="btn_abo2" href="deconnexion.php" type="button"><b>Se déconnecter</b></a>
 			</div>
 			<div class="footer">
 				<div id="dispoFoot">

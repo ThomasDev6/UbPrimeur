@@ -1,3 +1,30 @@
+<?php
+
+  require_once("connect.php");
+
+  $cp = $_POST["cp"];
+  $ville = $_POST["ville"];
+  $addr = $_POST["addr"];
+  $addr = str_replace("'"," ",$addr);
+  
+  $req = "SELECT idAdresse FROM adresse WHERE codePostal = $cp AND ville = '$ville' AND adresse ='$addr'";
+  $test = $co->query($req);
+  $nbLignes = $test->num_rows;
+
+  if($nbLignes > 0){
+
+    while($row = $test->fetch_assoc()){
+      $idAddr = $row["idAdresse"];
+    }
+
+  }else{
+
+    $sql = "INSERT INTO adresse VALUES(null,'$cp','$ville','$addr')";
+    $execute = $co->query($sql);
+    $idAddr = $co->insert_id;
+
+  }
+  ?>
 
 <!DOCTYPE html>
 <html>
@@ -25,6 +52,7 @@
     <?php 
     require_once('connect.php');
       echo "<form method='post' action='commande.php'>";
+      echo "<input type=\"hidden\" name=\"idAddr\" value='$idAddr'>";
       ?>
       
       <div class="row">

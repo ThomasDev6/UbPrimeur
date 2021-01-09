@@ -104,8 +104,7 @@ background-color: #005F40;
   border-radius: 4px;
 }
 .btn:hover {
-    background-color: white;
-    color: black;
+    background-color: #0e9467;
   }
 
   .tb{
@@ -206,13 +205,17 @@ table {
     border:solid 1px #005F40;
     background: #005F40;
     text-align:center;
-    padding:15px 20px;
+    padding:11px 16px;
     -webkit-transition: all 0.1s;
     -moz-transition: all 0.1s;
     transition: all 0.1s;
     -webkit-box-shadow: 0px 9px 0px  #005f3f00;
     -moz-box-shadow: 0px 9px 0px #005f3f00;
     box-shadow: 0px 9px 0px #005f3f00;
+ }
+
+ .btn_abo:hover{
+     background:#0e9467 ;
  }
  .btn_abo:active{
     -webkit-box-shadow: 0px 2px 0px #005f3f00;
@@ -235,4 +238,32 @@ table {
      display: inline;
      font-size: 20px;
      margin-right:30px;
+ }
+
+
+ .btn_abo2
+ {
+     font-size:17px;
+    position:relative;
+    width:200px;
+    color:#FFF;
+    display:block;
+    text-decoration:none;
+    margin:0 auto;
+    border-radius:4px;
+    border:solid 1px black;
+    background: #db1a1a;
+    text-align:center;
+    padding:15px 20px;
+    margin-bottom:10px;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+    -webkit-box-shadow: 0px 9px 0px  #005f3f00;
+    -moz-box-shadow: 0px 9px 0px #005f3f00;
+    box-shadow: 0px 9px 0px #005f3f00;
+ }
+
+ .btn_abo2:hover{
+     background:#f80404;
  }

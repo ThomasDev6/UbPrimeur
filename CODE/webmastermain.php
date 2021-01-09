@@ -1,3 +1,17 @@
+<?php
+require_once("connect.php");
+
+
+session_start();
+
+    if(!$_SESSION['auto']){
+		header("Location: index.html");
+		exit;
+    }
+?>
+	
+
+
 <!DOCTYPE html>
 <html lang="fr">
 	<meta charset="UTF-8">
