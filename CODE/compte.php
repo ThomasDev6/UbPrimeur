@@ -140,7 +140,7 @@
 			<?php
 			if (!empty($abo))
 			{
-				echo "<p class='abonnement' >Vous avez souscrit a un abonnement pour un panier hebdomadaire $abo</p>
+				echo "<p class='abonnement' >Vous avez souscrit à un abonnement pour un panier hebdomadaire $abo</p>
 				<a class='btn_abo' type='button' href='desabonnement.php'>Se désabonner</a>";
 			}
 			else 
@@ -224,7 +224,7 @@ while ($row2 = $p2->fetch_assoc() )
 		echo "<tr>";
 		echo "<td>".$row3['nomFruit']."</td>";
 		echo "<td>".$row3['prixFruit']." €</td>";
-		echo "<td>".$row3['quantiteFruit']." ".$row3['detailVenteFruit']."</td>";
+		echo "<td>".$row3['detailVenteFruit']."</td>";
 		echo "<td>".$row2['quantiteFruitCom']."</td>";
 		$total=$row3['prixFruit']*$row2['quantiteFruitCom'];
 		$totalPrixFruit+=$total;
@@ -254,7 +254,7 @@ while ($row2 = $p2->fetch_assoc() )
 				echo "<tr>";
 				echo "<td>".$row5['nomLeg']."</td>";
 				echo "<td>".$row5['prixLeg']." €</td>";
-				echo "<td>".$row5['quantiteLeg']." ".$row5['detailVenteLeg']."</td>";
+				echo "<td>".$row5['detailVenteLeg']."</td>";
 				echo "<td>".$row4['quantiteLegCom']."</td>";
 				$total=$row5['prixLeg']*$row4['quantiteLegCom'];
 				$totalPrixLeg+=$total;

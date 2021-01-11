@@ -43,6 +43,17 @@ while ($row3 = $p6->fetch_assoc() )
     $quantitefruit = $row3['quantiteFruitP'];
     $sql7="INSERT INTO lignefruitcommande VALUES ('$idfruit', '$id', '$idCom', '$quantitefruit')";
     $co->query($sql7);
+
+
+    $prep = "SELECT quantiteFruit FROM fruit WHERE idFruit = $idfruit";
+    $repEx = $co->query($prep);
+
+    while($rowEx = $repEx->fetch_assoc()){
+        $oldQu = $rowEx["quantiteFruit"];
+    }
+    $newQu = $oldQu - $quantitefruit;
+    $retraitStock = "UPDATE fruit SET quantiteFruit = $newQu WHERE idFruit = $idfruit";
+    $co->query($retraitStock);
 }
 
 
@@ -54,6 +65,17 @@ while ($row4 = $p7->fetch_assoc() )
     $quantiteleg=$row4['quantiteLegP'];
     $sql9="INSERT INTO lignelegcommande VALUES ('$idleg', '$id', '$idCom', '$quantiteleg')";
     $co->query($sql9);
+
+
+    $prep2 = "SELECT quantiteLeg FROM legume WHERE idLegume = $idleg";
+    $repEx2 = $co->query($prep2);
+
+    while($rowEx2 = $repEx2->fetch_assoc()){
+        $oldQu2 = $rowEx2["quantiteLeg"];
+    }
+    $newQu2 = $oldQu2 - $quantiteleg;
+    $retraitStock2 = "UPDATE legume SET quantiteLeg = $newQu2 WHERE idLegume = $idleg";
+    $co->query($retraitStock2);
 }
 
 $del = "DELETE FROM lignepanierfruit WHERE clientLigneP = $id";

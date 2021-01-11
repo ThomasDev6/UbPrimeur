@@ -143,7 +143,110 @@ session_start();
 
                     </form>
                 </div>
-            </div>
+            
+
+            <!-- PARTIE THOMAS -->
+
+            <div class ="form">
+                    <h2>Ajout de la recette hebdomadaire</h2>
+                    <form method ="post" action="ajoutRecetteHebdo.php">
+
+                        <p>Nom de la recette</p>
+                        <input type="text" name="nomRecette" require></br>
+
+                        <p>Nom de la photo</p>
+                        <input type="text" name="nomPhre"></br>
+
+                        <p>Temps de préparation</p>
+                        <input type="time" name="temps"></br>
+
+                        <p>Ingédients :</p>
+                        <table>
+                            <tr>
+                                <th class ="col">Quantité :</th>
+                                <th class ="col">Mesure :</th>
+                                <th>Nom ingrédient :</th>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="qt1" placeholder="100"></td>
+                                <td><input type="text" name="m1" placeholder="g"></td>
+                                <td><input type="text" name="ing1" placeholder="chocolat" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="qt2"></td>
+                                <td><input type="text" name="m2"></td>
+                                <td><input type="text" name="ing2"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="qt3"></td>
+                                <td><input type="text" name="m3"></td>
+                                <td><input type="text" name="ing3"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="qt4"></td>
+                                <td><input type="text" name="m4"></td>
+                                <td><input type="text" name="ing4"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="qt5"></td>
+                                <td><input type="text" name="m5"></td>
+                                <td><input type="text" name="ing5"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="qt6"></td>
+                                <td><input type="text" name="m6"></td>
+                                <td><input type="text" name="ing6"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="qt7"></td>
+                                <td><input type="text" name="m7"></td>
+                                <td><input type="text" name="ing7"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="qt8"></td>
+                                <td><input type="text" name="m8"></td>
+                                <td><input type="text" name="ing8"></td>
+                            </tr>
+                                                   
+                        </table>
+                        <table id="etp">
+                            <p>Etapes :</p>
+                                <tr>
+                                <td class="long"><input type="text" name="etape1"></td>
+                                </tr>
+                                <tr>
+                                <td class="long"><input type="text" name="etape2"></td>
+                                </tr>
+                                <tr>
+                                <td class="long"><input type="text" name="etape3"></td>
+                                </tr>
+                                <tr>
+                                <td class="long"><input type="text" name="etape4"></td>
+                                </tr>
+                                <tr>
+                                <td class="long"><input type="text" name="etape5"></td>
+                                </tr>
+                                <tr>
+                                <td class="long"><input type="text" name="etape6"></td>
+                                </tr>
+                                <tr>
+                                <td class="long"><input type="text" name="etape7"></td>
+                                </tr>
+                                <tr>
+                                <td class="long"><input type="text" name="etape8"></td>
+                                </tr>
+                                <tr>
+                                <td class="long"><input type="text" name="etape9"></td>
+                                </tr>
+                                <tr>
+                                <td class="long"><input type="text" name="etape10"></td>
+                                </tr>
+                        </table>
+                        <input id="btnVal" type="submit" value="Valider">
+                    </form>
+                </div>
+                </div>
+            <!-- FIN PARTIE THOMAS -->
 
             <h3> Liste des clients ayant accepté l'envoi de mails de notification :</h3>
             <?php

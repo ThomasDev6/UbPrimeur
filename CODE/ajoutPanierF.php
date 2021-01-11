@@ -58,7 +58,8 @@
         $ex = $co->query($req);
     }
 
-   
+    header("Location: fruits.php");
+    exit;
     ?>
     
 
