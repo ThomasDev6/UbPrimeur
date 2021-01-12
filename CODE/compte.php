@@ -275,7 +275,8 @@ while ($row2 = $p2->fetch_assoc() )
         echo "</table>";
         $sousTotal=$totalPrixLeg+$totalPrixFruit;
         
-    echo "<p class='TA'>Sous total de la commande : ".$sousTotal." € </p>";
+	echo "<p class='TA'>Sous total de la commande : ".$sousTotal." € </p>";
+	echo "<a class='btn_abo3' type='button' href='suppCom.php?idc=$idcommande'>Annuler la commande</a>";
     $sousTotal=0;
         $totalPrixLeg=0;
         $totalPrixFruit=0;
